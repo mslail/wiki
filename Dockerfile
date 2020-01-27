@@ -5,13 +5,10 @@ RUN apk update && apk add --no-cache git
 WORKDIR /go/src/
 COPY ["wiki-go", "wiki-go"]
 RUN go build wiki-go/main.go
-# CMD ["./main"] 
 
-# # PART 2
-# FROM node:8 as react-build
+# PART 2
 WORKDIR /
 COPY ["deploy.sh", "deploy.sh"]
-
 RUN apk add --update npm
 RUN apk update && apk add -u npm
 COPY ["wiki-frontend", "wiki-frontend"]
