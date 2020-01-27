@@ -1,0 +1,15 @@
+.error-page {
+  height: 100%;
+  text-align: center;
+}
+
+.error-page-text-container {
+  position: relative;
+  top: 20%;
+}
+
+@media (min-width: 1025px) {
+  .error-page h1 {
+    font-size: 2em;
+  }
+}

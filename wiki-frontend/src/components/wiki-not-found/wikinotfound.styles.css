@@ -1,0 +1,20 @@
+.wiki-not-found {
+  height: 100%;
+  text-align: center;
+}
+
+.edit-btn {
+  width: 120px;
+  margin: 4px;
+}
+
+.wiki-not-found-text-container {
+  position: relative;
+  top: 100px;
+}
+
+@media (min-width: 1025px) {
+  .wiki-not-found h1 {
+    font-size: 6em;
+  }
+}
